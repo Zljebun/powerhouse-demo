@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | PowerHouse Fitness</title>
+  <meta name="description" content="Fitness savjeti, treninzi i ishrana - citajte nas blog za korisne informacije.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">Power<span>House</span></a>
+      <nav class="nav-links" id="nav">
+        <a href="index.html">Pocetna</a>
+        <a href="usluge.html">Programi</a>
+        <a href="treneri.html">Treneri</a>
+        <a href="cjenovnik.html">Cjenovnik</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="header-right">
+        <div class="social-links"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a></div>
+        <a href="kontakt.html" class="btn btn-red btn-nav">Zapocni</a>
+      </div>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Otvori meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Blog</h1>
+      <p>Savjeti za trening, ishranu i zdrav zivot.</p>
+    </div>
+  </div>
+
+  <section class="blog-section">
+    <div class="container">
+      <div class="blog-grid">
+        <div class="blog-card fade-in">
+          <div class="blog-card-image">
+            <div class="placeholder" style="background: linear-gradient(135deg, #1a1a1a, #ff4d4d20);"></div>
+            <span class="category">Trening</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="date">15. januar 2025.</div>
+            <h3>5 savjeta za pocetnike u teretani</h3>
+            <p>Pocetni su dani u teretani najvazniji. Evo kako da izbjegnete najcesce greske i postavite temelje za dugorocan napredak.</p>
+            <a href="blog-post.html" class="read-more">Citaj vise →</a>
+          </div>
+        </div>
+        <div class="blog-card fade-in">
+          <div class="blog-card-image">
+            <div class="placeholder" style="background: linear-gradient(135deg, #0a0a0a, #00c85320);"></div>
+            <span class="category">Ishrana</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="date">8. januar 2025.</div>
+            <h3>Kako pravilno planirati obroke za misicnu masu</h3>
+            <p>Ishrana je 70% uspjeha. Naucite kako da rasporedite makronutrijente i planirate obroke za optimalan rast misica.</p>
+            <a href="#" class="read-more">Citaj vise →</a>
+          </div>
+        </div>
+        <div class="blog-card fade-in">
+          <div class="blog-card-image">
+            <div class="placeholder" style="background: linear-gradient(135deg, #2a1515, #ff4d4d15);"></div>
+            <span class="category">Oporavak</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="date">2. januar 2025.</div>
+            <h3>Zasto je oporavak jednako vazan kao i trening</h3>
+            <p>Mnogi zanemaruju oporavak, a upravo u tom periodu tijelo gradi misice. Saznajte kako optimizirati odmor.</p>
+            <a href="#" class="read-more">Citaj vise →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>PowerHouse</h4><p>Profesionalni fitness studio sa modernom opremom i posvecenim timom trenera.</p><div class="social-links"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a></div></div>
+        <div><h4>Navigacija</h4><div class="footer-links"><a href="index.html">Pocetna</a><a href="usluge.html">Programi</a><a href="treneri.html">Treneri</a><a href="cjenovnik.html">Cjenovnik</a></div></div>
+        <div><h4>Vise</h4><div class="footer-links"><a href="galerija.html">Galerija</a><a href="blog.html">Blog</a><a href="kontakt.html">Kontakt</a></div></div>
+        <div><h4>Radno vrijeme</h4><p>Pon - Pet: 06:00 - 22:00</p><p>Subota: 08:00 - 20:00</p><p>Nedjelja: 09:00 - 18:00</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 PowerHouse Fitness. Sva prava zadrzana. | Sajt izradio <a href="https://webkraft.ba" target="_blank">WebKraft</a></p></div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn'); const nav = document.getElementById('nav');
+    menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => nav.classList.remove('open')); });
+    window.addEventListener('scroll', () => { document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50); });
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

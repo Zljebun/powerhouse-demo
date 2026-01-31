@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treneri | PowerHouse Fitness</title>
+  <meta name="description" content="Upoznajte nas tim certificiranih trenera u PowerHouse fitness studiju.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">Power<span>House</span></a>
+      <nav class="nav-links" id="nav">
+        <a href="index.html">Pocetna</a>
+        <a href="usluge.html">Programi</a>
+        <a href="treneri.html" class="active">Treneri</a>
+        <a href="cjenovnik.html">Cjenovnik</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="blog.html">Blog</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="header-right">
+        <div class="social-links"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a></div>
+        <a href="kontakt.html" class="btn btn-red btn-nav">Zapocni</a>
+      </div>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Otvori meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Nasi treneri</h1>
+      <p>Certificirani profesionalci koji te vode do rezultata.</p>
+    </div>
+  </div>
+
+  <section class="trainers-section" style="padding-top: 80px;">
+    <div class="container">
+      <div class="trainers-grid">
+        <div class="trainer-card fade-in">
+          <div class="trainer-avatar" style="background: linear-gradient(135deg, #1a1a1a, #ff4d4d30);"></div>
+          <h3>Alen Husic</h3>
+          <div class="specialty">Personalni trening / Snaga</div>
+          <p>10 godina iskustva. NSCA certificirani trener snage. Specijalizacija za transformacije tijela i pripremu takmicara.</p>
+          <div class="social-links"><a href="#">📸</a><a href="#">📘</a></div>
+        </div>
+        <div class="trainer-card fade-in">
+          <div class="trainer-avatar" style="background: linear-gradient(135deg, #2a1515, #00c85330);"></div>
+          <h3>Sara Kovac</h3>
+          <div class="specialty">Grupni treninzi / HIIT</div>
+          <p>7 godina iskustva. ACE certificirana. Energicna i motivirajuca, specijalizovana za HIIT i funkcionalni trening.</p>
+          <div class="social-links"><a href="#">📸</a><a href="#">📘</a></div>
+        </div>
+        <div class="trainer-card fade-in">
+          <div class="trainer-avatar" style="background: linear-gradient(135deg, #0a0a0a, #ff4d4d20);"></div>
+          <h3>Nikola Petrovic</h3>
+          <div class="specialty">CrossFit / Kondicija</div>
+          <p>CrossFit Level 2 trener. Bivsi atleticar sa 8 godina trenerskog iskustva. Fokus na funkcionalnu snagu i izdrzljivost.</p>
+          <div class="social-links"><a href="#">📸</a><a href="#">📘</a></div>
+        </div>
+        <div class="trainer-card fade-in">
+          <div class="trainer-avatar" style="background: linear-gradient(135deg, #1a1a1a, #00c85320);"></div>
+          <h3>Lejla Mujic</h3>
+          <div class="specialty">Yoga &amp; Pilates</div>
+          <p>RYT-500 certificirana instruktorica joge. 6 godina iskustva u poducavanju Hatha, Vinyasa i Power Yoga stilova.</p>
+          <div class="social-links"><a href="#">📸</a><a href="#">📘</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Treniraj sa najboljima</h2>
+      <p>Zakazi besplatnu konsultaciju sa jednim od nasih trenera.</p>
+      <a href="kontakt.html" class="btn btn-green">Zakazi konsultaciju</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>PowerHouse</h4><p>Profesionalni fitness studio sa modernom opremom i posvecenim timom trenera.</p><div class="social-links"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a></div></div>
+        <div><h4>Navigacija</h4><div class="footer-links"><a href="index.html">Pocetna</a><a href="usluge.html">Programi</a><a href="treneri.html">Treneri</a><a href="cjenovnik.html">Cjenovnik</a></div></div>
+        <div><h4>Vise</h4><div class="footer-links"><a href="galerija.html">Galerija</a><a href="blog.html">Blog</a><a href="kontakt.html">Kontakt</a></div></div>
+        <div><h4>Radno vrijeme</h4><p>Pon - Pet: 06:00 - 22:00</p><p>Subota: 08:00 - 20:00</p><p>Nedjelja: 09:00 - 18:00</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 PowerHouse Fitness. Sva prava zadrzana. | Sajt izradio <a href="https://webkraft.ba" target="_blank">WebKraft</a></p></div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn'); const nav = document.getElementById('nav');
+    menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => nav.classList.remove('open')); });
+    window.addEventListener('scroll', () => { document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50); });
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

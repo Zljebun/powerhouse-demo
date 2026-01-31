@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | PowerHouse Fitness</title>
+  <meta name="description" content="Kontaktirajte PowerHouse fitness studio ili se prijavite za besplatan probni trening.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">Power<span>House</span></a>
+      <nav class="nav-links" id="nav">
+        <a href="index.html">Pocetna</a>
+        <a href="usluge.html">Programi</a>
+        <a href="treneri.html">Treneri</a>
+        <a href="cjenovnik.html">Cjenovnik</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="blog.html">Blog</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+      </nav>
+      <div class="header-right">
+        <div class="social-links"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a></div>
+        <a href="kontakt.html" class="btn btn-red btn-nav">Zapocni</a>
+      </div>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Otvori meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Kontakt</h1>
+      <p>Javi se, pitaj sta te zanima ili se prijavi za besplatan trening.</p>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <h3>Posjeti nas</h3>
+          <div class="contact-detail">
+            <div class="icon">📍</div>
+            <div><div class="label">Adresa</div><div class="value">Zmaja od Bosne 8, 71000 Sarajevo</div></div>
+          </div>
+          <div class="contact-detail">
+            <div class="icon">📞</div>
+            <div><div class="label">Telefon</div><div class="value">+387 33 987 654</div></div>
+          </div>
+          <div class="contact-detail">
+            <div class="icon">✉️</div>
+            <div><div class="label">Email</div><div class="value">info@powerhouse.ba</div></div>
+          </div>
+          <div class="contact-detail">
+            <div class="icon">📸</div>
+            <div><div class="label">Instagram</div><div class="value">@powerhouse.ba</div></div>
+          </div>
+          <div class="working-hours">
+            <h4>Radno vrijeme</h4>
+            <p>Ponedeljak - Petak: 06:00 - 22:00</p>
+            <p>Subota: 08:00 - 20:00</p>
+            <p>Nedjelja: 09:00 - 18:00</p>
+          </div>
+        </div>
+        <form class="contact-form fade-in" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ime i prezime</label>
+              <input type="text" id="name" name="name" placeholder="Tvoje ime" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+387 6x xxx xxx">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tvoj@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="program">Program</label>
+              <select id="program" name="program">
+                <option value="">Izaberi program</option>
+                <option value="grupni">Grupni treninzi</option>
+                <option value="personalni">Personalni trening</option>
+                <option value="crossfit">CrossFit</option>
+                <option value="yoga">Yoga &amp; Pilates</option>
+                <option value="ostalo">Ostalo</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Poruka</label>
+            <textarea id="message" name="message" placeholder="Tvoji ciljevi, pitanja, ili kada bi zelio/zeljela zapoceti..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-red">Posalji poruku</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.1!2d18.4131!3d43.8563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c8c0!2sSarajevo!5e0!3m2!1sbs!2sba!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokacija PowerHouse"></iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>PowerHouse</h4><p>Profesionalni fitness studio sa modernom opremom i posvecenim timom trenera.</p><div class="social-links"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a></div></div>
+        <div><h4>Navigacija</h4><div class="footer-links"><a href="index.html">Pocetna</a><a href="usluge.html">Programi</a><a href="treneri.html">Treneri</a><a href="cjenovnik.html">Cjenovnik</a></div></div>
+        <div><h4>Vise</h4><div class="footer-links"><a href="galerija.html">Galerija</a><a href="blog.html">Blog</a><a href="kontakt.html">Kontakt</a></div></div>
+        <div><h4>Radno vrijeme</h4><p>Pon - Pet: 06:00 - 22:00</p><p>Subota: 08:00 - 20:00</p><p>Nedjelja: 09:00 - 18:00</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 PowerHouse Fitness. Sva prava zadrzana. | Sajt izradio <a href="https://webkraft.ba" target="_blank">WebKraft</a></p></div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn'); const nav = document.getElementById('nav');
+    menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => nav.classList.remove('open')); });
+    window.addEventListener('scroll', () => { document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50); });
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

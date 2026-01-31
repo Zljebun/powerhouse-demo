@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cjenovnik | PowerHouse Fitness</title>
+  <meta name="description" content="Pogledajte nase clanarine i izaberite plan koji vam odgovara.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">Power<span>House</span></a>
+      <nav class="nav-links" id="nav">
+        <a href="index.html">Pocetna</a>
+        <a href="usluge.html">Programi</a>
+        <a href="treneri.html">Treneri</a>
+        <a href="cjenovnik.html" class="active">Cjenovnik</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="blog.html">Blog</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="header-right">
+        <div class="social-links"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a></div>
+        <a href="kontakt.html" class="btn btn-red btn-nav">Zapocni</a>
+      </div>
+      <button class="mobile-toggle" id="menuBtn" aria-label="Otvori meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Cjenovnik</h1>
+      <p>Izaberi plan koji odgovara tvom nacinu treninga.</p>
+    </div>
+  </div>
+
+  <section class="pricing-section">
+    <div class="container">
+      <div class="pricing-grid">
+        <div class="pricing-card fade-in">
+          <h3>Basic</h3>
+          <div class="price">50 KM</div>
+          <div class="period">mjesecno</div>
+          <ul>
+            <li>Pristup teretani</li>
+            <li>Kardio zona</li>
+            <li>Svlacionice i tus</li>
+            <li>Radno vrijeme 06-22h</li>
+            <li>-</li>
+            <li>-</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn-outline">Izaberi plan</a>
+        </div>
+        <div class="pricing-card featured fade-in">
+          <h3>Pro</h3>
+          <div class="price">80 KM</div>
+          <div class="period">mjesecno</div>
+          <ul>
+            <li>Sve iz Basic plana</li>
+            <li>Svi grupni treninzi</li>
+            <li>CrossFit sesije</li>
+            <li>Yoga &amp; Pilates</li>
+            <li>Plan ishrane</li>
+            <li>-</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn-red">Izaberi plan</a>
+        </div>
+        <div class="pricing-card fade-in">
+          <h3>VIP</h3>
+          <div class="price">800 KM</div>
+          <div class="period">godisnje</div>
+          <ul>
+            <li>Sve iz Pro plana</li>
+            <li>4 personalna treninga/mj.</li>
+            <li>Mjesecna analiza tijela</li>
+            <li>Prioritet za termine</li>
+            <li>Gost karta (1/mj.)</li>
+            <li>PowerHouse majica</li>
+          </ul>
+          <a href="kontakt.html" class="btn btn-outline">Izaberi plan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Prvi trening je besplatan</h2>
+      <p>Dodji, probaj, pa odluci. Bez obaveza.</p>
+      <a href="kontakt.html" class="btn btn-green">Prijavi se</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h4>PowerHouse</h4><p>Profesionalni fitness studio sa modernom opremom i posvecenim timom trenera.</p><div class="social-links"><a href="#">📸</a><a href="#">📘</a><a href="#">🎬</a></div></div>
+        <div><h4>Navigacija</h4><div class="footer-links"><a href="index.html">Pocetna</a><a href="usluge.html">Programi</a><a href="treneri.html">Treneri</a><a href="cjenovnik.html">Cjenovnik</a></div></div>
+        <div><h4>Vise</h4><div class="footer-links"><a href="galerija.html">Galerija</a><a href="blog.html">Blog</a><a href="kontakt.html">Kontakt</a></div></div>
+        <div><h4>Radno vrijeme</h4><p>Pon - Pet: 06:00 - 22:00</p><p>Subota: 08:00 - 20:00</p><p>Nedjelja: 09:00 - 18:00</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 PowerHouse Fitness. Sva prava zadrzana. | Sajt izradio <a href="https://webkraft.ba" target="_blank">WebKraft</a></p></div>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn'); const nav = document.getElementById('nav');
+    menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => nav.classList.remove('open')); });
+    window.addEventListener('scroll', () => { document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50); });
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
